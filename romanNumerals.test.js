@@ -20,6 +20,9 @@ describe("Instances of the V rune", () => {
     test("that I after V adds 1 to 5 to return 6", () => {
         expect(romanToArabic("VI")).toBe(6);
     });
+    test("that V after I creates an individual subtractive numeral", () => {
+        expect(romanToArabic("IV")).toBe(4);
+    });
 });
 
 

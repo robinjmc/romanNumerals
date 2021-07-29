@@ -4,7 +4,11 @@ const romanToArabic = (roman) => {
     let romanArr = roman.split('');
     let arabic = 0;
     for (i = 0; i < romanArr.length; i++) {
-        arabic += romanNumeralsJson[romanArr[i]];
+        if (romanNumeralsJson[romanArr[i]] < romanNumeralsJson[romanArr[i + 1]]) {
+            arabic -= romanNumeralsJson[romanArr[i]]
+        } else {
+            arabic += romanNumeralsJson[romanArr[i]];
+        }
     }
     return arabic;
 }
