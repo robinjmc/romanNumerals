@@ -13,3 +13,17 @@ The roman numerals kata is confused. Not the developer. It's two katas in one. T
 The roman numerals validation kata ensures that what ever is being asked of the database function fits within the realm of its capabilities. Not only does splitting this kata in two ensure a clear objective for the developer it also introduces the developer to important ideas around architecture (surely something far more useful in a software developers day to day).
 
 Below I've outlined what I've found online about the rules of roman numerals in the style of ACs. It might not produce the leanest, sleekest solution, but I hope that it scratches the 'what if' itch. I know in my place of work asking the right questions is far more valuable skill than a one line solution.
+
+Standard Rule Set
+
+1. Roman numerals only represent numbers from 1 to 3999
+
+2. Roman numerals are read, left to right, in descending order
+
+3. There are seven singular base numbers, that when in different, ascending pairs, form subtractive numbers
+
+4. Subtractive numbers, alongside V, L and D can only appear once
+
+5. Every other base number can appear a maximum of 3 times
+
+Bracket notation rule set
