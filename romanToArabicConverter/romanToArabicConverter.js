@@ -1,4 +1,4 @@
-const romanNumeralsJson = require('./romanNumeralsData.json');
+const romanNumeralsJson = require('../romanNumeralsData.json');
 
 const romanToArabic = (roman) => {
     let romanArr = roman.split('');

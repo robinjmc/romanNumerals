@@ -1,4 +1,4 @@
-const romanToArabic = require('./romanNumerals');
+const romanToArabic = require('./romanToArabicConverter');
 
 describe("Instances of the I rune", () => {
     test("that a single I returns 1", () => {
@@ -54,6 +54,12 @@ describe("Instances of the L rune", () => {
     });
     test("that L after X creates an individual subtractive numeral", () => {
         expect(romanToArabic("XL")).toBe(40);
+    });
+    test("test individual subtractive numeral can be followed by non-subtractive numerals", () => {
+        expect(romanToArabic("XLIII")).toBe(43);
+    })
+    test("that IV after XL returns 44", () => {
+        expect(romanToArabic("XLIV")).toBe(44);
     });
 });
 
