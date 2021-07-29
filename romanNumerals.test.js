@@ -71,6 +71,9 @@ describe("Instances of the C rune", () => {
     test("that C after X creates an individual subtractive numeral", () => {
         expect(romanToArabic("XC")).toBe(90);
     });
+    test("that IV after C returns 104", () => {
+        expect(romanToArabic("CIV")).toBe(104);
+    });
 });
 
 
