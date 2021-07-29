@@ -5,12 +5,7 @@ const romanNumeralsData = {
 
 
 const romanToArabic = (roman) => {
-    if (roman === "I") {
-        return 1;
-    }
-    if (roman === "V") {
-        return 5;
-    }
+    return romanNumeralsData[roman];
 }
 
 module.exports = romanToArabic;
