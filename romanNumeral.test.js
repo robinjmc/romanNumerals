@@ -12,3 +12,10 @@ describe("Instances of the V rune", () => {
         expect(romanToArabic("V")).toBe(5);
     });
 });
+
+
+describe("Instances of the X rune", () => {
+    test("that a single X returns 10", () => {
+        expect(romanToArabic("X")).toBe(10);
+    });
+});
