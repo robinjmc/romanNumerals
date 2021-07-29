@@ -4,6 +4,9 @@ describe("Instances of the I rune", () => {
     test("that a single I returns 1", () => {
         expect(romanToArabic("I")).toBe(1);
     });
+    test("that a two Is returns 2", () => {
+        expect(romanToArabic("II")).toBe(2);
+    });
 });
 
 
