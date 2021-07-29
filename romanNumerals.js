@@ -1,12 +1,7 @@
-const romanNumeralsData = {
-    "I": 1,
-    "V": 5,
-    "X": 10,
-}
-
+const romanNumeralsJson = require('./romanNumeralsData.json');
 
 const romanToArabic = (roman) => {
-    return romanNumeralsData[roman];
+    return romanNumeralsJson[roman];
 }
 
 module.exports = romanToArabic;
