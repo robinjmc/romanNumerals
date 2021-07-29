@@ -36,6 +36,9 @@ describe("Instances of the X rune", () => {
     test("that three Xs return 30", () => {
         expect(romanToArabic("XXX")).toBe(30);
     });
+    test("that X after I creates an individual subtractive numeral", () => {
+        expect(romanToArabic("IX")).toBe(9);
+    });
 });
 
 
@@ -49,6 +52,9 @@ describe("Instances of the L rune", () => {
     test("that an L followed by a V and then an I returns 56", () => {
         expect(romanToArabic("LVI")).toBe(56);
     });
+    test("that L after X creates an individual subtractive numeral", () => {
+        expect(romanToArabic("XL")).toBe(40);
+    });
 });
 
 
@@ -61,6 +67,9 @@ describe("Instances of the C rune", () => {
     });
     test("that three Cs returns 300", () => {
         expect(romanToArabic("CCC")).toBe(300);
+    });
+    test("that C after X creates an individual subtractive numeral", () => {
+        expect(romanToArabic("XC")).toBe(90);
     });
 });
 
