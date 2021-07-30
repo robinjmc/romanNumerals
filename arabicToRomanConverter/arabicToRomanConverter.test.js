@@ -11,3 +11,17 @@ describe("Instances of the I rune", () => {
         expect(arabicToRoman(3)).toBe("III");
     });
 });
+
+
+
+describe("Instances of the V rune", () => {
+    test("that 5 returns V", () => {
+        expect(arabicToRoman(5)).toBe("V");
+    });
+    test("that 6 returns I after V", () => {
+        expect(arabicToRoman(6)).toBe("VI");
+    });
+    test("that 4 returns V after I", () => {
+        expect(arabicToRoman(4)).toBe("IV");
+    });
+});
