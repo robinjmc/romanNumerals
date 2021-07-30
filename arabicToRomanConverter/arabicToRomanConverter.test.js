@@ -40,3 +40,25 @@ describe("Instances of the X rune", () => {
         expect(arabicToRoman(9)).toBe("IX");
     });
 });
+
+describe("Instances of the L rune", () => {
+    test("that 50 returns L", () => {
+        expect(arabicToRoman(50)).toBe("L");
+    });
+    test("that 51 returns an L followed by an I", () => {
+        expect(arabicToRoman(51)).toBe("LI");
+    });
+    test("that 56 returns an L followed by a V and then an I", () => {
+        expect(arabicToRoman(56)).toBe("LVI");
+    });
+    test("that 40 returns L after X", () => {
+        expect(arabicToRoman(40)).toBe("XL");
+    });
+    test("that 43 returns XLIII", () => {
+        expect(arabicToRoman(43)).toBe("XLIII");
+    })
+    test("that 44 returns IV after XL", () => {
+        expect(arabicToRoman(44)).toBe("XLIV");
+    });
+});
+
