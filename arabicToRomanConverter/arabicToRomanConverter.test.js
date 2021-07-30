@@ -25,3 +25,18 @@ describe("Instances of the V rune", () => {
         expect(arabicToRoman(4)).toBe("IV");
     });
 });
+
+describe("Instances of the X rune", () => {
+    test("that 10 returns X", () => {
+        expect(arabicToRoman(10)).toBe("X");
+    });
+    test("that 20 returns XX", () => {
+        expect(arabicToRoman(20)).toBe("XX");
+    });
+    test("that 30 returns XXX", () => {
+        expect(arabicToRoman(30)).toBe("XXX");
+    });
+    test("that 9 returns X after I", () => {
+        expect(arabicToRoman(9)).toBe("IX");
+    });
+});
